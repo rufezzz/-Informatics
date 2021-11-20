@@ -1,0 +1,30 @@
+#include <fstream>
+#include <string>
+
+
+int main(void)
+{
+    std::ifstream in;
+    std::ofstream out;
+
+    using namespace std;
+
+    in.open("input.txt");
+    out.open("output.txt");
+
+    int a;
+
+    in>>a;
+
+    out<<a%10;
+    
+    return 0;
+}
+//////////////////////////////////////////////////
+Дано натуральное число. Выведите его последнюю цифру.
+
+Входные данные
+Вводится натуральное число.
+
+Выходные данные
+Выведите ответ на задачу.
