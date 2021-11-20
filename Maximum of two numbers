@@ -1,0 +1,39 @@
+#include <fstream>
+
+int main(void)
+{
+    std::ifstream in;
+    std::ofstream out;
+    
+    in.open("input.txt");
+    out.open("output.txt");
+    
+    int a;
+    int b;
+    
+    in>>a;
+    in>>b;
+
+    if (a>b)
+    {
+        out<<a;
+        return 0;
+    }
+    else
+    {
+        out<<b;
+        return 0;
+    }
+    
+    in.close();
+    out.close();
+    
+    return 0;
+}
+///////////////////////////////////////
+Ввод и вывод данных производятся через стандартные потоки ввода-вывода.
+Входные данные
+Даны два целых числа, каждое число записано в отдельной строке.
+
+Выходные данные
+Выведите наибольшее из данных чисел.
