@@ -1,0 +1,28 @@
+#include <fstream>
+
+int main(void)
+{
+    std::ifstream in;
+    std::ofstream out;
+
+    in.open("input.txt");
+    out.open("output.txt");
+    
+    
+    int n;
+    in>>n;
+
+    int b = 0; // чётное
+    int c = 0;
+
+    while (n<0<n)
+    {
+        if (n%2==0)
+        {
+            b=b+1;
+        }
+        in>>n;
+    }
+    out<<b;
+    return 0;
+}
